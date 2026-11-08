@@ -2,7 +2,7 @@
 
 A fast, single-page portfolio for developers who ship things: live projects, work in progress with roadmaps, a timeline, and contact links. Dark, terminal-flavoured, and built to be edited in one file.
 
-**Live example:** [N/A](N/A)
+**Live example:** [https://portfolio.fatimaezzahraa-aithssain.workers.dev/](click to view)
 
 - All your content lives in one file: [`content/site.ts`](content/site.ts)
 - Static output: plain HTML, CSS and JS that runs on any host
