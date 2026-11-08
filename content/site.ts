@@ -10,6 +10,21 @@ export type LiveProject = {
 
   export type TimelineItem = { when: string; role: string; org: string; desc: string };
   export type EducationItem = { when: string; degree: string; institution: string; desc: string };
+  export interface Certification {
+    title: string;
+    issuer: string;
+    category: "Networking & IT" | "Data & AI" | "Development" | "Language" | "Workplace";
+    date: string;
+    fileUrl: string;
+    fileType: "image" | "pdf";
+  }
+  export interface RecognitionItem {
+    quote: string;
+    author: string;
+    role: string;
+    fileUrl: string;
+    fileType: "image" | "pdf";
+  }
 
   export const site = {
     name: "Fatima Ez-Zahraa AIT-HSSAIN",
@@ -119,6 +134,113 @@ export type LiveProject = {
       desc: "Core computer engineering foundations, programming, database management, and system development.",
     },
   ] as EducationItem[],
+
+  certifications: [
+    {
+      title: "English for IT 2",
+      issuer: "Cisco Networking Academy / OpenEDG",
+      category: "Language",
+      date: "2026",
+      fileUrl: "/certs/cisco-english-it2.jpg",
+      fileType: "image"
+    },
+    {
+      title: "NDG Linux Unhatched",
+      issuer: "Cisco Networking Academy / NDG",
+      category: "Networking & IT",
+      date: "2026",
+      fileUrl: "/certs/cisco-ndg-linux-unhatched.jpg",
+      fileType: "image"
+    },
+    {
+      title: "CCNA: Introduction to Networks",
+      issuer: "Cisco Networking Academy",
+      category: "Networking & IT",
+      date: "2026",
+      fileUrl: "/certs/cisco-ccna-intro-networks.jpg",
+      fileType: "image"
+    },
+    {
+      title: "English for IT 1",
+      issuer: "Cisco Networking Academy",
+      category: "Language",
+      date: "2026",
+      fileUrl: "/certs/cisco-english-it1.jpg",
+      fileType: "image"
+    },
+     {
+      title: "Nanodegree: Foundation of Generative AI",
+      issuer: "Udacity",
+      category: "Data & AI",
+      date: "2025",
+      fileUrl: "/certs/udacity-genai.jpg",
+      fileType: "image"
+    },
+     {
+      title: "Data Science & Analytics",
+      issuer: "Cisco Networking Academy",
+      category: "Data & AI",
+      date: "2024",
+      fileUrl: "/certs/hplife-data-science.jpg",
+      fileType: "image"
+    },
+     {
+      title: "EF SET English Certificate — C2 (82/100)",
+      issuer: "EF Standard English Test (EF SET)",
+      category: "Language",
+      date: "2024",
+      fileUrl: "/certs/efset-english.jpg",
+      fileType: "image"
+    },
+     {
+      title: "ReactJS Fundamentals",
+      issuer: "Great Learning",
+      category: "Development",
+      date: "2026",
+      fileUrl: "/certs/greatlearning-reactjs.jpg",
+      fileType: "image"
+    },
+     {
+      title: "How to deal with angry customers",
+      issuer: "Telus Digital",
+      category: "Workplace",
+      date: "2024",
+      fileUrl: "/certs/telus-angry-customers.jpg",
+      fileType: "image"
+    },
+     {
+      title: "Unsolicited communication rules",
+      issuer: "Telus Digital",
+      category: "Workplace",
+      date: "2024",
+      fileUrl: "/certs/telus-utr.jpg",
+      fileType: "image"
+    },
+  ] as Certification[],
+
+recognition: [
+    {
+      quote: "“Fatima has been a fantastic presence on the team. She brings great energy to the floor, demonstrates excellent listening skills, and handles her jobs with notable efficiency and accuracy. She follows SME instructions carefully, applies guidance right away, and consistently delivers high-quality work.”",
+      author: "Ahmed Amine",
+      role: "SME — ADT, PACE Project · TELUS Digital",
+      fileUrl: "/recog/ahmed-amine.png",
+      fileType: "image"
+    },
+    {
+      quote: "“She is doing a great job handling the Atlantic repair tickets and escalations, remaining persistent when facing system issues and consistently working toward a resolution. Fatima is very detail-oriented, and her previous experience is beneficial with the NS backlog resolution.”",
+      author: "Oksana",
+      role: "Resource Manager — Resource Strategy & Planning · TELUS Digital",
+      fileUrl: "/recog/oksana.png",
+      fileType: "image"
+    },
+    {
+      quote: "“Fatima-Ezzahraa s'est imposée comme l'un des meilleurs éléments de notre service et une collaboratrice tout simplement indispensable. Elle s'est distinguée par sa capacité exceptionnelle à résoudre les problèmes complexes avec rapidité, calme et pragmatisme. Je la recommande chaleureusement et sans la moindre réserve.”",
+      author: "Radia Chaouqui",
+      role: "Team Leader — PACE Morocco · TELUS Digital",
+      fileUrl: "/recog/radia-chaouqui.pdf",
+      fileType: "pdf"
+    }
+  ] as RecognitionItem[],
 
     contact: {
       headline: "Open to opportunities — say hi.",

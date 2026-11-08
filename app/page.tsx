@@ -1,6 +1,7 @@
-import { site, type LiveProject, type EducationItem } from "@/content/site";
+import { site, type LiveProject, type EducationItem, type Certification } from "@/content/site";
+import { CertificationsSection } from "@/app/components/CertificationsSection";
+import { RecognitionSection } from "@/app/components/RecognitionSection";
 
-// Stamped at build time, so it's always true for the deployed page.
 const deployedOn = new Date().toISOString().slice(0, 10);
 const external = { target: "_blank", rel: "noopener noreferrer" } as const;
 
@@ -101,6 +102,8 @@ export default async function Page() {
             <a href="#building">building</a>
             <a href="#timeline">timeline</a>
             <a href="#education">education</a>
+            <a href="#certifications">certifications</a>
+            <a href="#recognition">recognition</a>
             <a href="#contact" className="accent">contact →</a>
           </div>
         </div>
@@ -240,6 +243,9 @@ export default async function Page() {
           </div>
         </div>
       </section>
+
+      <CertificationsSection certs={site.certifications} />
+      <RecognitionSection recognitions={site.recognition} />
 
       <section id="contact" className="section">
         <div className="wrap contact">

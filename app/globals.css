@@ -295,3 +295,32 @@ h1 {
   .orbit-ring, .orbit-dot, .hero-image-circle { animation: none; }
   .hero-image-inner { transition: none; }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
