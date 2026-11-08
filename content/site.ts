@@ -69,7 +69,7 @@ export type LiveProject = {
       {
         name: "My portfolio",
         url: "https://portfolio.fatimaezzahraa-aithssain.workers.dev/",
-        domain: "https://portfolio.fatimaezzahraa-aithssain.workers.dev/",
+        domain: "view live project",
         desc: "Personal developer & professional portfolio built with Next.js, TypeScript, and Tailwind CSS. Features live GitHub API integration, academic history, interactive certificate previews, and professional recognition.",
         tags: ["JavaScript","TypeScript", "Next.js", "Tailwind CSS"],
         metric: "responsive, interactive",
