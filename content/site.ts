@@ -124,7 +124,7 @@ export type LiveProject = {
       headline: "Open to opportunities — say hi.",
       email: "fatimaezzahraa.aithssain@gmail.com",
       socials: [
-        { label: "phone", url: "https://api.whatsapp.com/send?phone=212777706902" },
+        { label: "phone", url: "https://web.whatsapp.com/send/?phone=212777706902" },
         { label: "location", url: "https://www.google.com/maps/place/Casablanca,+Morocco" },
         { label: "linkedin", url: "https://www.linkedin.com/in/ait-hssain-fatimaez-zahraa/" },
         { label: "github", url: "https://github.com/FatimaEz-zahraaAIT-HSSAIN"}
