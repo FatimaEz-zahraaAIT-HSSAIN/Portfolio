@@ -99,9 +99,7 @@ export default async function Page() {
           <div className="nav-links">
             <a href="#about">about</a>
             <a href="#projects">projects</a>
-            <a href="#building">building</a>
             <a href="#timeline">timeline</a>
-            <a href="#education">education</a>
             <a href="#certifications">certifications</a>
             <a href="#recognition">recognition</a>
             <a href="#contact" className="accent">contact →</a>
